@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.royoyo.springboot</groupId>
+  <artifactId>course-api</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>springboot_1</name>
+  
+ <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.4.2.RELEASE</version>
+</parent>
+
+<dependencies>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+	</dependency>
+</dependencies>
+ 
+<properties>
+	<java.version>1.8</java.version>
+</properties>
+
+</project>
+<!-- 	//What's happening in the background 
+Spring Boot created a group of dependencies that do work well together
+You don't need to pick and choose what you need
+Parent pulls configuration (version of jars) that informs maven what jars to pull when you specify a dependency
+preset list of possible combination of jars that work well without issues is known as Bill of Materials
+you only need to worry about the version of the parent
+-->
