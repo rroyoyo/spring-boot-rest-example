@@ -21,6 +21,17 @@ public class HelloController {
 	//-Standalone application easy to deploy, run and develop
 	//-useful for microservices architecture, no need for multiple deployments
 	
+	//Spring MVC Controller
+	// Controller (simple java classes) map URI and HTTP method to functionality
+	// method executed when match found, proper response formed (converted from Array [java object values] to JSON) and returned
 	
+	
+	//Things to think about when building REST API:
+	// what are the resources? REST deals with Nouns as entities or Resources
+	// Resources are things in your domain, they need to be identified
+	// Once resources identified one can look at ways in which resources can be accessed using HTTP methods
+	// Resources for Course API: Topic, Course, Lesson
+	  
 	
 }
+ 
