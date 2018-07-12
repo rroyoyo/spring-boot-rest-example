@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: oyo
+Build-Jdk: 10.0.1
+Implementation-Title: course-api-data
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: io.royoyo.springboot
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/course-api-data
+Created-By: Maven Integration for Eclipse
+
