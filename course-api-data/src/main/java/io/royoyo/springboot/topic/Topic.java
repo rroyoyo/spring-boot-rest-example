@@ -1,16 +1,22 @@
 package io.royoyo.springboot.topic;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 //@Entity annotation lets spring know that we want the data base 
 //to contain rows with these objects (topic instances)
 @Entity 
+@Table(name = "topic")
 public class Topic {
 
 	@Id
+	@Column(name = "tid")
 	private String id;
+	@Column(name = "tname")
 	private String name;
+	@Column(name = "tdesc")
 	private String description;
 	
 	public Topic(String id, String name, String description) {
