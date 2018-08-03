@@ -2,7 +2,6 @@ package io.royoyo.springboot.topic;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,8 +29,8 @@ public class TopicController {
 
 	// variable tokenized with the help of {}
 	//path variable ensures that "id" in URL is passed through the method
-	@RequestMapping("/topics/{id}")
-	public Topic getTopic(@PathVariable String id) {
+	@RequestMapping("/topics/search/{id}")
+	public List<Topic> getTopic(@PathVariable String id) {
 		return topicService.getTopic(id);
 	}
 	
